@@ -1,0 +1,14 @@
+<div class="list-group">
+    <a href="#" class="list-group-item">
+        <!-- <h2 class="list-group-time-heading">{{person.name}}</h2> -->
+        <!-- <h2 class="list-group-time-heading">{{personName}}</h2> -->
+        <h2 class="list-group-time-heading">{{personObject.name}}</h2>
+        <!-- <p class="list-group-item-text">{{person.address}}</p> -->
+        <!-- <p class="list-group-item-text">{{personAddress}}</p> -->
+        <!-- <p class="list-group-item-text">{{personObject.address}}</p> -->
+        <!-- <p class="list-group-item-text">{{formattedAddressFunction({aperson : personObject})}}</p> -->
+        <p class="list-group-item-text">{{formattedAddressFunction({person : personObject})}}</p>
+        <small><ng-transclude></ng-transclude></small>
+    </a>
+
+</div>

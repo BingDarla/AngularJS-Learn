@@ -1,0 +1,19 @@
+<label>Search</label>
+<input type="text" value="Doe">
+<div>
+    <h1>This is the Main page</h1>
+    <hr />
+    <!-- pass text -->
+    <!-- <search-result person-name="{{person.name}}" person-address="{{person.address}}"></search-result> -->
+
+    <!-- pass as an object including function-->
+    <!-- <search-result person-object='person' formatted-address-function="formattedAddress(aperson)"></search-result> -->
+
+</div>
+
+<h3>Search Results</h3>
+<div class="list-group" ng-repeat="person in people">
+    <search-result person-object="person" formatted-address-function="formattedAddress(person)">
+        *search results may not be valid
+    </search-result>
+</div>

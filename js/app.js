@@ -1,6 +1,21 @@
-window.addEventListener('hashchange', function() {
-    console.log('Hash changed!:' + window.location.hash);
-    if (window.location.hash === "#/bookmark/3") {
-        console.log('let me go to Page 2');
-    }
+//Module
+var weatherApp = angular.module('weatherApp', ['ngRoute', 'ngResource']);
+
+//Routes
+weatherApp.config(function($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('');
+    $routeProvider
+        .when('/', {
+            templateUrl: '/js/pages/home.html',
+
+        })
 })
+
+//Controller
+weatherApp.controller('homeController', ['$scope', function($scope) {
+
+}]);
+//Controller
+weatherApp.controller('forecastController', ['$scope', function($scope) {
+
+}]);

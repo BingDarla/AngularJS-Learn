@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="myApp">
+<html lang="en" ng-app="weatherApp">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Weather</title>
 
 </head>
 
 <body>
-    <div class="container">
-        <div ng-controller="mainController">
-            <h1>{{name}}</h1>
-        </div>
-        <div ng-controller="secondController">
-            <h2>{{name}}</h2>
-        </div>
-        <a href="#/bookmark/3">Go to the bookmark</a>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minus nam nobis, sunt autem suscipit necessitatibus. Alias laudantium voluptates nisi deserunt tenetur, laborum reprehenderit, totam, optio sed corrupti nam ut?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minus nam nobis, sunt autem suscipit necessitatibus. Alias laudantium voluptates nisi deserunt tenetur, laborum reprehenderit, totam, optio sed corrupti nam ut?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minus nam nobis, sunt autem suscipit necessitatibus. Alias laudantium voluptates nisi deserunt tenetur, laborum reprehenderit, totam, optio sed corrupti nam ut?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minus nam nobis, sunt autem suscipit necessitatibus. Alias laudantium voluptates nisi deserunt tenetur, laborum reprehenderit, totam, optio sed corrupti nam ut?</p>
-        <a id='bookmark'></a>
-        <p>####Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae minus nam nobis, sunt autem suscipit necessitatibus. Alias laudantium voluptates nisi deserunt tenetur, laborum reprehenderit, totam, optio sed corrupti nam ut?</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum blanditiis enim excepturi necessitatibus perferendis culpa inventore omnis voluptatibus, similique repellat dolore exercitationem saepe modi facere quibusdam vel animi, tenetur corporis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit perferendis, reiciendis quos nihil, veniam consequatur nisi reprehenderit beatae dolorem quibusdam aspernatur molestiae vel omnis voluptatem autem iure? Eos, saepe?</p>
 
-    </div>
+    <!-- <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">AngularJS</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/second"><i class="fa fa-home"></i> Second</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header> -->
+
+    <!-- <div class="container" ng-controller="mainController">
+
+        <div ng-view></div>
+    </div> -->
+
+    <header>
+        <h1>AngularJS Weather</h1>
+    </header>
+    <div ng-view></div>
 
 
 </body>
 
 <script src="js/angular.js"></script>
 <script src="js/angular-messages.js"></script>
-<script src="js/script.js"></script>
+<!-- <script src="js/script.js"></script> -->
 <script src="js/angular-resource.js"></script>
+<script src="https://code.angularjs.org/1.6.9/angular-route.min.js"></script>
 <script src="js/app.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="css/style.css">
